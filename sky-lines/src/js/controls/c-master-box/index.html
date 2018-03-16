@@ -1,0 +1,50 @@
+<nav id="navbar_size" class="mynav navbar navbar-inverse">
+    <div class="navbar-header">
+      <div class="button-collapse-container">
+        <button id="but" type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="sky-brand">
+        <a class="navbar-brand">Sky-Lines</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar" data-bind="event: { mouseover: mobile_size }">
+        <ul class="nav navbar-nav">
+          <li>
+              <a class= "normal-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: trigger.bind($data, 'edit-campaigns')">Edit Campaign</a>
+          </li>
+          <li>
+              <a class= "normal-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: landmark.bind($data, 'master-create-campaign-container'), css: {active: active() === 'master-create-campaign-container'}">Create Campaign</a>
+          </li>
+          <li>
+            <a class= "normal-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: landmark.bind($data, 'master-edit-account'), css: {active: active() === 'master-edit-account'}">Edit Account</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="log-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: trigger.bind($data,'master-log-out')"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!-- ko if: active() === 'master-basic-information-container' -->
+    <!-- basic information container -->
+    <c-master-basic-information-container params="context: context"></c-master-basic-information-container>
+<!-- /ko -->
+<!-- ko if: active() === 'master-edit-account' -->
+    <!-- edit account -->
+    <c-master-edit-account params="context: context"></c-master-edit-account>
+<!-- /ko -->
+<!-- ko if: active() === 'master-create-campaign-container' -->
+    <!-- create campaign -->
+    <c-master-create-campaign-container params="context: context"></c-master-create-campaign-container>
+<!-- /ko -->
+<!-- ko if: active() === 'master-edit-campaigns-container' -->
+    <!-- edit campaign -->
+    <c-master-edit-campaigns-container params="context: context"></c-master-edit-campaigns-container>
+<!-- /ko -->

@@ -1,0 +1,27 @@
+<span>
+    <!--ko if: info()['type'] == 'selection' && info()['status'] == 'run' -->
+    <div class="cmd_div">
+      <p class="details_title">Commands</p>
+      <center class="cmd_container">
+        <a class="selection_button_green true_task_btn btn" data-bind="click: trigger.bind('true','worker-selection-mountain')">True</a>
+        <a class="selection_button_red false_task_btn btn" data-bind="click: trigger.bind('false','worker-selection-mountain')">False</a>
+      </center>
+    </div>
+    <!-- /ko-->
+
+    <!--ko if: info()['type'] == 'annotation' && info()['status'] == 'run' -->
+    <div class="cmd_div">
+      <p class="details_title">Commands</p>
+      <center class="cmd_container">
+        <a class="selection_button_green true_task_btn btn" data-bind="click: trigger.bind('send','worker-call-send-annotation')">Send</a>
+        <a class="selection_button_red false_task_btn btn" data-bind="click: trigger.bind('clear','worker-clear-annotation')">Clear</a>
+      </center>
+    </div>
+    <!-- /ko-->
+
+    <!--ko if: info()['status'] == 'stop' -->
+    <div class="cmd_div">
+      <p class="details_title">Commands</p>
+    </div>
+    <!-- /ko-->
+</span>

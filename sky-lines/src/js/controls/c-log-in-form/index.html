@@ -1,0 +1,20 @@
+<div id="log_in_form">
+<center>
+<form class="animated fadeInDown">
+    <div class="form-group" data-bind="css: {'has-error': errors()['username']}">
+        <input id="log-in-form_field_1" data-bind="value: fields()['username']" onchange="set_placeholder_after_change_log('log-in-form_field_1','Username','#fff')" placeholder="Username" type="text" class="form-control validate log_in_input" aria-describedby="log-in-form_field_1_error">
+        <span id="log-in-form_field_1_error" class="help-block" data-bind="text: errors()['username']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['password']}">
+        <input id="log-in-form_field_2" data-bind="value: fields()['password']" onchange="set_placeholder_after_change_log('log-in-form_field_2','Password','#fff')" placeholder="Password" type="password" class="form-control validate log_in_input" aria-describedby="log-in-form_field_2_error">
+        <span id="log-in-form_field_2_error" class="help-block" data-bind="text: errors()['password']"></span>
+    </div>
+</form>
+</center>
+<center>
+<div class="row animated fadeInUp">
+    <a class="btn sign_up_button" onclick="no_background()" data-bind="click: trigger.bind($data, 'sign-up-ev')">sign up</a>
+    <a class="btn log_in_button" data-bind="click: trigger.bind($data, 'log-in-ev')">log in</a>
+</div>
+</center>
+</div>

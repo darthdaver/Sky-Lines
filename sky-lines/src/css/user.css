@@ -1,0 +1,739 @@
+/*@@@@@@@@@@ LOGO @@@@@@@@@@*/
+
+.dim {
+
+    width: 250px;
+    height: 182px;
+}
+
+.info_label {
+
+    text-align: right;
+    padding: 10px !important;
+    width: 50%;
+}
+
+.info_value {
+
+    text-align: justify;
+    padding: 10px !important;
+    width: 50%;
+}
+
+.info_table {
+
+    padding: 10px;
+}
+
+
+/*@@@@@@@@@@ BUTTON @@@@@@@@@@*/
+
+.change_btn{
+
+    margin-bottom: 35px;
+}
+
+.menu-button{
+
+    background-color: #020037;
+    border: 2px solid white !important;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+
+  border-color: white;
+}
+
+.table{
+
+  margin-bottom: 0px !important;
+}
+
+.table_std_button{
+
+  margin-bottom: 5px !important;
+  width: 90px !important;
+}
+
+.workers_td_btn {
+
+  text-align: right;
+  width: 160px !important;
+}
+
+.workers_td_btn_ready{
+
+  text-align: center;
+}
+
+.images_td_btn, .images_td_btn_ready{
+
+  text-align: left;
+}
+
+.edit_td_btn_ready{
+
+  text-align: center;
+  width: 160px !important;
+}
+
+.edit_btn{
+
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.terminate_td_btn, .start_td_btn, .statistics_td_btn{
+
+  text-align: right;
+  padding-right: 15px;
+}
+
+.start_button, .terminate_button, .statistics_button{
+
+  color: white;
+  background-color: #c40000;
+  border-color: #c40000;
+  border-radius: 17px;
+  margin-bottom: 5px !important;
+  width: 110px !important;
+
+}
+
+.terminate_button:hover, .start_button:hover, .statistics_button:hover{
+
+  background-color: white;
+  border-color: #c40000;
+  color: #c40000 !important;
+}
+
+
+
+/*@@@@@@@@@@ TABLE @@@@@@@@@@*/
+
+.tab_title{
+
+  font-size: 18px;
+  color: white !important;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: #020037;
+  text-align: left;
+  margin-bottom: 0px !important;
+  max-width: 300px;
+  position: absolute;
+  margin-left: 5%;
+  width: 30%;
+  min-width: 180px;
+}
+
+.tab_title_details{
+
+    font-size: 18px;
+    color: white !important;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    background-color: #020037;
+    text-align: left;
+    margin-bottom: 0px !important;
+}
+
+.list-table, .list-table-ann, .list_table_sel{
+
+    margin-left: 5%;
+    position: absolute;
+    border: 2px solid #020037;
+    border-top: none;
+    padding-bottom: 0px !important;
+    margin-top: 40px;
+    max-width: 300px !important;
+    width: 30%;
+    height: 236px;
+    min-width: 180px;
+    overflow: scroll;
+}
+
+.tab_head{
+
+  background-color: #020037 !important;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th{
+
+    background-color: rgba(0, 189, 231, 0.48);
+    color: white;
+}
+
+tr.selected {
+    background-color: #551c1c !important;
+    color: white;
+}
+
+.details_title, .details_title_ann{
+
+  font-size: 18px;
+  color: white !important;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #020037;
+  text-align: left;
+  height: 40px;
+  margin-bottom: 0px !important;
+}
+
+.details_campaign{
+
+  border: 2px solid #020037;
+  border-top: none;
+  padding-bottom: 0px !important;
+  min-width: 200px;
+  height: 240px;
+  width: 60%;
+  right: 50% !important;
+  position: relative;
+  margin-left: 85%;
+}
+
+.false_head{
+
+  background-color: #020037;
+}
+
+.td_label{
+
+  padding-top: 15px;
+  padding-left: 20px;
+  min-width: 146px !important;
+}
+
+.td_value{
+
+  text-align: center;
+  padding-top: 15px;
+  width: 250px;
+}
+
+
+/*@@@@@@@@@@ BASIC INFO @@@@@@@@@@*/
+
+.info_container{
+  /*
+  max-width: 400px;
+  border: 5px solid #020037;*/
+  /*border-radius: 10px;*/
+  margin: 40px;
+  padding-top: 0px !important;
+  padding-bottom: 40px;
+}
+
+.info_row_table{
+
+  /*border-bottom: 1px solid #020037;*/
+}
+
+
+/*@@@@@@@@@@ EDIT ACCOUNT @@@@@@@@@@*/
+
+@media (min-width: 701px) {
+
+  .modify{
+
+      width: 50%;
+      position: absolute;
+      margin-left: 20px;
+      padding-right: 25px;
+      margin-right: 0px;
+      border-right: 2px solid #020037;
+  }
+
+  .h_modify{
+
+      text-align: right;
+      margin-bottom: 70px;
+      font-size: 30px;
+      max-width: 200px;
+      margin-left: 55%;
+      margin-right: 2%;
+      background: -webkit-linear-gradient(right, #020037, transparent);
+      background-size: 100% 1px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      color: #020037 !important;
+      font-family: BlinkMacSystemFont;
+  }
+
+  .details{
+
+      width: 50%;
+      position: absolute;
+      margin-left: 55%;
+      margin-right: 0px !important;
+      text-align: left;
+      padding-left: 10px;
+  }
+
+  .h_details{
+
+      font-size: 30px;
+      text-align: left;
+      width: 50%;
+      max-width: 200px !important;
+      text-align: left;
+      background: -webkit-linear-gradient(left, #020037, transparent);
+      background-size: 100% 1px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 70px;
+      color: #020037 !important;
+      margin-left: 2%;
+      font-family: BlinkMacSystemFont;
+  }
+}
+
+@media (max-width: 700px){
+
+  .h_modify{
+
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 200px;
+      font-size:  30px;
+      background: -webkit-radial-gradient(circle, #020037, transparent);
+      background-size: 100% 1px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 70px;
+      font-family: BlinkMacSystemFont;
+  }
+
+  .h_details{
+
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 200px;
+      font-size: 30px;
+      background: -webkit-radial-gradient(circle, #020037, transparent);
+      background-size: 100% 1px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 70px;
+      font-family: BlinkMacSystemFont;
+  }
+}
+
+
+/*@@@@@@@@@@ EDIT CAMPAIGN @@@@@@@@@@*/
+
+.edit_container{
+
+  margin-bottom: 30px;
+}
+
+
+/*@@@@@@@@@@ MODAL STATISTICS @@@@@@@@@@*/
+
+.statistics_images{
+
+  position: inherit !important;
+}
+
+
+/*@@@@@@@@@@ MODAL WORKERS @@@@@@@@@@*/
+
+.workers_table_container{
+
+  width: 30%;
+  border-right: 1px solid #020037;
+}
+
+.images_table_container{
+
+  border-right: 1px solid #020037;
+}
+
+.workers_list{
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: block;
+  height: 250px;
+  min-width: 100px;
+  padding: 15px;
+}
+
+.images_list{
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: block;
+  height: 350px;
+  min-width: 100px;
+  padding: 15px;
+  vertical-align: none;
+}
+
+.img_label{
+
+  min-width: 100px;
+}
+
+.main_table{
+
+  border: 1px solid;
+  border-right: 1px solid #020037;
+  border-collapse: unset;
+}
+
+.glyphicon-one-fine-green-dot:before {
+    content:"\25cf";
+    font-size: 3em;
+    color: #4CAF50;
+}
+
+.glyphicon-one-fine-red-dot:before {
+    content:"\25cf";
+    font-size: 3em;
+    color: #c40000;
+}
+
+
+.selection_button_red, .annotation_button_red{
+
+  color: white;
+  background-color: #c40000;
+  border-color: #c40000;
+  border-radius: 17px;
+  width: 110px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.selection_button_red:hover, .annotation_button_red:hover{
+
+  background-color: white;
+  border-color: #c40000;
+  color: #c40000;
+}
+
+.selection_button_green, .annotation_button_green{
+
+  color: white;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  border-radius: 17px;
+  width: 110px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.selection_button_green:hover, .annotation_button_green:hover{
+
+  background-color: white;
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+.sel_label{
+
+  text-align: center;
+  padding-top: 20px !important;
+}
+
+.ann_label{
+
+  text-align: center;
+  padding-top: 20px !important;
+}
+
+.td_enable_btn{
+
+  text-align: center;
+}
+
+.selector_list, .annotator_list{
+
+  max-height: 90px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: block;
+  text-align: -webkit-center;
+}
+
+.main_table_selector, .main_table_annotator{
+
+  border: 1px solid #020037;
+  border-collapse: unset;
+  max-width: 45%;
+  display: inline-block;
+  margin-top: 30px;
+  height: 150px !important;
+  width: 220px !important;
+}
+
+.table_selectors, .table_annotators{
+
+  margin-bottom: 0px;
+}
+
+.td_table_selectors, .td_table_annotators{
+
+  padding: 10px;
+}
+
+.workers_table_container_selectors, .workers_table_container_annotator{
+
+  padding: 10px;
+}
+
+.sel_title, .ann_title{
+
+  width: 220px;
+  text-align: center;
+}
+
+
+.workers-table-list{
+
+  margin-bottom: 15px !important;
+}
+
+/*@@@@@@@@@@ MODAL IMAGES @@@@@@@@@@*/
+
+.widget-container {
+    margin-right: 320px;
+}
+
+.content h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.selected-item {
+    margin-bottom: 20px;
+}
+
+#selected-files {
+    display: none;
+}
+
+.options {
+    padding: 20px;
+    background-color: #f5f5f5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+}
+
+.caption {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.option {
+    margin-top: 10px;
+}
+
+.image_selected{
+
+  max-width: 80%;
+}
+
+.upload_file {
+	position: relative;
+	overflow: hidden;
+}
+
+.upload_file input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+}
+.progress {
+    margin-bottom: 0;
+}
+
+.td_image{
+
+  width: 80%;
+
+  height: 350px;
+}
+
+.image_table_container{
+
+  padding: 10px;
+  width: 180px;
+}
+
+.upload_label{
+    margin: 0px !important;
+    padding: 8px;
+    padding-top: 5px;
+}
+
+.upload_label:hover{
+
+    color: white;
+}
+
+.upload_container{
+
+  margin: 0px;
+  padding: 0px !important;
+  height: 35px;
+  width: 135px !important;
+  align-content: center;
+  vertical-align: middle;
+  border: 1px solid #020037;
+  padding-left: 6px!important;
+}
+
+.upload_container:hover {
+
+    background-color: #4CAF50;
+    border: 1px solid white;
+    color: white !important;
+}
+
+.images-table-list{
+
+  margin-bottom: 15px !important;
+}
+
+/*@@@@@@@@@@ WORKER EDIT TASKS @@@@@@@@@@*/
+
+.selection_table{
+
+  margin-left: 45px;
+  width: 165px;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+.annotation_table{
+
+  margin-left: 45px;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.tasks_table_container{
+
+  border-right: 1px solid #020037;
+}
+
+.task_list{
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 250px;
+  min-width: 100px;
+  padding: 15px;
+}
+
+.details_task{
+
+  border: 2px solid #020037;
+  border-top: none;
+  padding-bottom: 0px !important;
+  min-width: 200px;
+  height: 240px;
+  width: 196px;
+  position: absolute;
+  left: 230px;
+}
+
+.cmd_div{
+
+  position: absolute;
+  border: 2px solid #020037;
+  text-align: center;
+  position: absolute;
+  margin-top: 278px;
+  height: 246px;
+  left: 230px;
+  width: 200px;
+}
+
+.true_task_btn{
+
+  margin-bottom: 2px !important;
+}
+
+.start_task_btn{
+
+  margin-bottom: 10px !important;
+}
+
+.details_title_ann{
+
+    margin-top: 277px;
+    width: 165px !important;
+}
+
+.list-table-ann{
+
+  margin-bottom: 35px;
+  margin-left: 0% !important;
+  margin-top: 0px !important;
+  width: 165px;
+  min-width: unset !important;
+  border: 2px solid #020037;
+  height: 207px;
+}
+
+.list-table-sel{
+
+  margin-left: 0% !important;
+  margin-top: 0px !important;
+  min-width: unset !important;
+  border: 2px solid #020037;
+  width: 165px;
+  height: 207px;
+}
+
+.div_image{
+
+  border: 2px solid #020037;
+  min-width: 300px;
+  height: 523px;
+  position: absolute;
+  left: 460px;
+  width: 60%;
+}
+
+.cmd_container{
+
+  margin-top: 35px;
+}
+
+.canvas{
+
+  z-index: 1;
+  height: 518px;
+  width: 100%;
+  left: 0px !important;
+  height: 523px;
+  left: 460px;
+  position: absolute;
+  top: 0px;
+}

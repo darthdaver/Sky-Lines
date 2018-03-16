@@ -1,0 +1,38 @@
+<center>
+<p class="head">Sign Up</p>
+<form>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Fullname']}">
+        <input id="sign-up-form_field_0" data-bind="value: fields()['Fullname']" onchange="set_placeholder_after_change_sign('sign-up-form_field_0','Fullname','#020037')" placeholder="Fullname" type="text" class="form-control validate sign_up_input" aria-describedby="sign-up-form_field_0_error">
+        <span id="sign-up-form_field_0_error" class="help-block" data-bind="text: errors()['Fullname']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Username']}">
+        <input id="sign-up-form_field_1" data-bind="value: fields()['Username']" onchange="set_placeholder_after_change_sign('sign-up-form_field_1','Username','#020037')" placeholder="Username" type="text" class="form-control validate sign_up_input" aria-describedby="sign-up-form_field_1_error">
+        <span id="sign-up-form_field_1_error" class="help-block" data-bind="text: errors()['Username']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Password']}">
+        <input id="sign-up-form_field_2" data-bind="value: fields()['Password']" onchange="set_placeholder_after_change_sign('sign-up-form_field_2','Password','#020037')" placeholder="Password" type="password" class="form-control validate sign_up_input" aria-describedby="sign-up-form_field_2_error">
+        <span id="sign-up-form_field_2_error" onload="myfunction()" class="help-block" type="text" data-bind="text: errors()['Password']"></span>
+    </div>
+    <div class="form-group type" data-bind="css: {'has-error': errors()['Type of account']}">
+      <label class="control-label" for="sign-up-form_field_3" data-bind="css: {attr: {'data-error': errors()['Type of account']}">Type of account</label>
+      <label class="radio-inline">
+        <input type="radio" value="worker" data-bind="checked: fields()['Type of account']" name="optradio"/>worker
+      </label>
+      <label class="radio-inline type_master">
+        <input type="radio" value="master" data-bind="checked: fields()['Type of account']" name="optradio" />master
+      </label>
+        <span id="sign-up-form_field_3_error" class="help-block" data-bind="text: errors()['Type of account']" name="optradio"></span>
+    </div>
+</form>
+</center>
+<center>
+<div class="row">
+    <a class="btn registration_button" data-bind="click: trigger.bind($data, 'registration-ev')">registration</a>
+</div>
+</center>
+<center>
+<div class="row">
+    <p class="paraghraph">Are you already registered?</p>
+    <a class="btn ret_to_log_in_button" data-bind="click: trigger.bind($data, 'log-in-ev-2')">log in</a>
+</div>
+</center>

@@ -1,0 +1,163 @@
+/*@@@@@@@@@@ LOGO @@@@@@@@@@*/
+
+.animated {
+
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeOut {
+
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fadeInDown {
+
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+  }
+  100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+        opacity: 0;
+        transform: translateY(-40px);
+  }
+  100% {
+         opacity: 1;
+         transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+        opacity: 0;
+        -webkit-transform: translateY(400px);
+  }
+  100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+        opacity: 0;
+        transform: translateY(400px);
+  }
+  100% {
+         opacity: 1;
+         transform: translateY(0);
+  }
+}
+
+/*@@@@@@@@@@ INPUT @@@@@@@@@@*/
+
+.log_in_input {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    border-radius: 25px;
+}
+
+input.log_in_ph_red_1::placeholder, input.log_in_ph_red_2::placeholder{
+
+    color: #c40000 !important;
+    opacity: 1;
+}
+
+input.log_in_ph_white_1::placeholder,input.log_in_ph_white_2::placeholder{
+
+    color: white !important;
+    opacity: 1;
+}
+
+/*@@@@@@@@@@ BUTTONS @@@@@@@@@@*/
+
+.btn{
+
+    margin: 10px;
+    margin-top: 20px !important;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.sign_up_button
+{
+    color: #fff;
+    background-color: #020037;
+    border-color: #020037;
+    border-radius: 17px;
+    width: 130px;
+}
+
+.log_in_button{
+
+    color: #020037;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 17px;
+    width: 130px;
+}
+
+.log_in_button:hover {
+
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sign_up_button:hover {
+
+    background-color: #c40000;
+    border-color: #fff;
+    color: white;
+}

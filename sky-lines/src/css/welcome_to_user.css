@@ -1,0 +1,66 @@
+/*@@@@@@@@@@ FADE UP @@@@@@@@@@*/
+
+.animated_band{
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInBand {
+
+    -webkit-animation-name: fadeInBand;
+    animation-name: fadeInBand;
+}
+
+@-webkit-keyframes fadeInBand {
+  0% {
+        opacity: 0;
+        -webkit-transform: translateY(300px);
+  }
+  100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBand {
+  0% {
+        opacity: 0;
+        transform: translateY(300px);
+  }
+  100% {
+         opacity: 1;
+         transform: translateY(0);
+  }
+}
+
+/*@@@@@@@@@@ BAND @@@@@@@@@@*/
+
+.band{
+
+    background-color: rgba(255,255,255,0.5);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/*@@@@@@@@@@ TEXT @@@@@@@@@@*/
+
+.white_text{
+
+    color: white;
+}
+
+.cursive{
+
+  font-family: serif;
+  font-size: 15px;
+}
+
+.title{
+
+  font-family: "Quicksand", verdana,sans-serif;
+}

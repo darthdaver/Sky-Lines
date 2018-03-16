@@ -1,0 +1,19 @@
+<center>
+  <div class="info_container">
+    <p class="h_font head">Info User</p>
+    <table class="info_table" data-bind="if: item">
+      <tr class="info_row_table">
+        <td class="info_label">Fullname: </td>
+        <td class="info_value" data-bind="text: item()['fullname']"></td>
+      </tr>
+      <tr class="info_row_table">
+        <td class="info_label">Username: </td>
+        <td class="info_value" data-bind="text: item()['username']"></td>
+      </tr>
+      <tr class="info_row_table">
+        <td class="info_label">Type: </td>
+        <td class="info_value" data-bind="text: item()['type']"></td>
+      </tr>
+    </table>
+  </div>
+</center>

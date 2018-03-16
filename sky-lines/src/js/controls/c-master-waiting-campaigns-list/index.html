@@ -1,0 +1,10 @@
+<p class="tab_title">Waiting Campaigns</p>
+<div class = "table-responsive list-table">
+  <table class="table table-hover table-condensed table-striped list_table">
+    <tbody data-bind="foreach: items">
+        <tr class="cursor_row" onclick="selected(this)" data-bind="click: $parent.select, attr: {'id': $data['name'] + '_' + $index() + '_ready'}">
+            <td data-bind="text: $data['name']" style="white-space: pre-wrap;"></td>
+        </tr>
+    </tbody>
+  </table>
+</div>

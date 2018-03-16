@@ -1,0 +1,16 @@
+<span>
+  <table class="div_image">
+    <tr>
+      <td class="td_image">
+        <center>
+          <!-- ko if: image()['jpg'] && info()['type'] == 'selection'-->
+          <img id="task_img" class="image_selected" data-bind="attr: { src: 'http://awt.ifmledit.org' + image()['jpg'] }"></img>
+          <!-- /ko -->
+          <!-- ko if: image()['jpg'] && info()['type'] == 'annotation' -->
+          <line-drawer params="src: 'http://awt.ifmledit.org' + image()['jpg'], pen: pen(), line: line"></line-drawer>
+          <!-- /ko -->
+        </center>
+      </td>
+    </tr>
+  </table>
+</span>

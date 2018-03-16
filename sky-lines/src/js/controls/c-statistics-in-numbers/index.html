@@ -1,0 +1,59 @@
+<!-- ko if: item -->
+<center>
+<table class="details_task statistics_images" data-bind="if: item">
+  <tr class="row_detail">
+    <td class="details_title">Statistics</td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Accepted:</td>
+    <td class="td_value" data-bind="text: item()['accepted']"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotated:</td>
+    <td class="td_value" data-bind="text: item()['annotated']"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Available:</td>
+    <td class="td_value" data-bind="text: item()['available']"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Rejected:</td>
+    <td class="td_value" data-bind="text: item()['rejected']"></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="td_button start_td_btn"><center><a class="selection_button_red false_task_btn start_task_btn btn" data-bind="click: trigger.bind($data,'worker-start-task')">Start</a></center></td>
+  </tr>
+</table>
+</center>
+<!-- /ko -->
+
+<!-- ko ifnot: item -->
+<center>
+<table class="details_task statistics_images" data-bind="ifnot: item">
+  <tr class="row_detail">
+    <td class="details_title">Statistics</td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Accepted:</td>
+    <td class="td_value"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotated:</td>
+    <td class="td_value"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Available:</td>
+    <td class="td_value"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Rejected:</td>
+    <td class="td_value"></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="td_button start_td_btn"><center><a disabled class="selection_button_red false_task_btn start_task_btn btn" data-bind="click: trigger.bind($data,'worker-true-mountain')">Start</a></center></td>
+  </tr>
+</table>
+</center>
+<!-- /ko -->

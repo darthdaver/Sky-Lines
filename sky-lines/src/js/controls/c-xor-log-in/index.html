@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        </div>
+</div>
+<!-- ko if: active() === 'log-in-form-container' -->
+    <!-- log in container -->
+    <c-log-in-form-container params="context: context"></c-log-in-form-container>
+<!-- /ko -->
+<!-- ko if: active() === 'welcome-to-user' -->
+    <!-- welcome to user -->
+    <c-welcome-to-user params="context: context"></c-welcome-to-user>
+<!-- /ko -->

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <span data-bind="if: active() === 'master'">
+            <c-master params="context: context" class="container"></c-master>
+        </span>
+        <span data-bind="if: active() === 'sign-up'">
+            <c-sign-up params="context: context" class="container"></c-sign-up>
+        </span>
+        <span data-bind="if: active() === 'worker-container'">
+            <c-worker-container params="context: context" class="container"></c-worker-container>
+        </span>
+        <span data-bind="if: active() === 'log-in'">
+            <c-log-in params="context: context" class="container"></c-log-in>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="modify">
+  <p class="h_modify">Modify</p>
+  <form>
+    <div class="form-group" data-bind="css: {'has-error': errors()['fullname']}">
+        <input id="worker-account-form_field_0" data-bind="value: fields()['fullname']" onchange="set_placeholder_after_change('worker-account-form_field_0','Fullname','#020037')" placeholder="Fullname" type="text" class="form-control validate std_input" aria-describedby="worker-account-form_field_0_error">
+        <span id="worker-account-form_field_0_error" class="help-block" data-bind="text: errors()['fullname']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['password']}">
+        <input id="worker-account-form_field_1" data-bind="value: fields()['password']" onchange="set_placeholder_after_change('worker-account-form_field_1','Password','#020037')" placeholder="Password" type="text" class="form-control validate std_input" aria-describedby="worker-account-form_field_1_error">
+        <span id="worker-account-form_field_1_error" class="help-block" data-bind="text: errors()['password']"></span>
+    </div>
+  </form>
+  <div class="row">
+    <a class="btn green_button change_btn" data-bind="click: trigger.bind($data, 'worker-change-basic-info')">Change</a>
+  </div>
+</div>

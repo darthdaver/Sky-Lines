@@ -1,0 +1,21 @@
+<div class="details">
+<p class="h_details">Details</p>
+<table class="info_table" data-bind="if: item">
+  <tr>
+    <td class="info_label">Fullname:</td>
+    <td class="info_value" data-bind="text: item()['fullname']"></td>
+  </tr>
+  <tr>
+    <td class="info_label">Username:</td>
+    <td class="info_value" data-bind="text: item()['username']"></td>
+  </tr>
+  <tr>
+    <td class="info_label">Password:</td>
+    <td class="info_value" data-bind="text: item()['password']"></td>
+  </tr>
+  <tr>
+    <td class="info_label">Type:</td>
+    <td class="info_value" data-bind="text: item()['type']"></td>
+  </tr>
+</table>
+</div>

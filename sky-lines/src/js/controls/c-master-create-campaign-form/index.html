@@ -1,0 +1,28 @@
+<center>
+<p class="head">Create Campaign</p>
+<form>
+    <div class="form-group" data-bind="css: {'has-error': errors()['name']}">
+        <input id="master-create-campaign-form_field_2" data-bind="value: fields()['name']" type="text" onchange="set_placeholder_after_change_create('master-create-campaign-form_field_2','Name','#020037')" placeholder="Name" class="form-control validate std_input" aria-describedby="master-create-campaign-form_field_2_error">
+        <span id="master-create-campaign-form_field_2_error" class="help-block" data-bind="text: errors()['name']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['selection_replica']}">
+        <input id="master-create-campaign-form_field_3" data-bind="value: fields()['selection_replica']" type="text" onchange="set_placeholder_after_change_create('master-create-campaign-form_field_3','Selection Replica','#020037')" placeholder="Selection Replica" class="form-control validate std_input" aria-describedby="master-create-campaign-form_field_3_error">
+        <span id="master-create-campaign-form_field_3_error" class="help-block" data-bind="text: errors()['selection_replica']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['threshold']}">
+        <input id="master-create-campaign-form_field_4" data-bind="value: fields()['threshold']" type="text" onchange="set_placeholder_after_change_create('master-create-campaign-form_field_4','Threshold','#020037')" placeholder="Threshold" class="form-control validate std_input" aria-describedby="master-create-campaign-form_field_4_error">
+        <span id="master-create-campaign-form_field_4_error" class="help-block" data-bind="text: errors()['threshold']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['annotation_replica']}">
+        <input id="master-create-campaign-form_field_0" data-bind="value: fields()['annotation_replica']" type="text" onchange="set_placeholder_after_change_create('master-create-campaign-form_field_0','Annotation Replica','#020037')" placeholder="Annotation Replica" class="form-control validate std_input" aria-describedby="master-create-campaign-form_field_0_error">
+        <span id="master-create-campaign-form_field_0_error" class="help-block" data-bind="text: errors()['annotation_replica']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['annotation_size']}">
+        <input id="master-create-campaign-form_field_1" data-bind="value: fields()['annotation_size']" type="text" onchange="set_placeholder_after_change_create('master-create-campaign-form_field_1','Annotation Size','#020037')" placeholder="Annotation Size" class="form-control validate std_input" aria-describedby="master-create-campaign-form_field_1_error">
+        <span id="master-create-campaign-form_field_1_error" class="help-block" data-bind="text: errors()['annotation_size']"></span>
+    </div>
+</form>
+<div class="row">
+    <a class="btn green_button" data-bind="click: trigger.bind($data, 'create-campaign')">Create</a>
+</div>
+</center>

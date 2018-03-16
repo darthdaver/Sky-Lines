@@ -1,0 +1,42 @@
+<nav id="navbar_size" class="mynav navbar navbar-inverse">
+    <div class="navbar-header">
+      <div class="button-collapse-container">
+        <button id="but" type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="sky-brand">
+        <a class="navbar-brand">Sky-Lines</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar" data-bind="event: { mouseover: mobile_size }">
+        <ul class="nav navbar-nav">
+          <li>
+              <a class= "normal-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: trigger.bind($data, 'edit-tasks')">Edit Tasks</a>
+          </li>
+          <li>
+            <a class= "normal-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: landmark.bind($data, 'worker-edit-account'), css: {active: active() === 'worker-edit-account'}">Edit Account</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="log-li-nav collapse li-nav" data-toggle="collapse" data-bind="click: trigger.bind($data,'worker-log-out')"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!-- ko if: active() === 'worker-basic-information-container' -->
+    <!-- basic information container -->
+    <c-worker-basic-information-container params="context: context"></c-worker-basic-information-container>
+<!-- /ko -->
+<!-- ko if: active() === 'worker-edit-tasks' -->
+    <!-- worker edit tasks -->
+    <c-worker-edit-tasks params="context: context"></c-worker-edit-tasks>
+<!-- /ko -->
+<!-- ko if: active() === 'worker-edit-account' -->
+    <!-- worker edit account -->
+    <c-worker-edit-account params="context: context"></c-worker-edit-account>
+<!-- /ko -->

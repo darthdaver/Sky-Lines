@@ -1,0 +1,261 @@
+/*@@@@@@@@@@ BACKGROUND @@@@@@@@@@*/
+
+.body_layout{
+
+    background-image: url("../assets/images/image_4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+/*@@@@@@@@@@ CONTAINER @@@@@@@@@@*/
+
+.container{
+
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px !important;
+}
+
+@media (min-width: 768px){
+
+  .container{
+
+      width:100%
+  }
+}
+
+@media (min-width: 992px){
+
+  .container{
+
+      width:100%
+  }
+}
+
+@media (min-width: 1200px){
+
+  .container{
+
+      width:100%
+  }
+}
+
+/*@@@@@@@@@@ FONT @@@@@@@@@@*/
+
+body{
+
+  font-family: "Quicksand", verdana,sans-serif !important;
+  color: #020037;
+}
+
+.h_font{
+
+  font-family: "Quicksand" !important;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  background-color: #020037;
+  color: white !important;
+  padding-bottom: 20px;
+
+}
+
+.head{
+
+  font-size: 50px;
+  max-width: 550px;
+  background: -webkit-radial-gradient(circle, #020037, transparent);
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+  color: #020037 !important;
+  padding-bottom: 10px;
+  font-family: BlinkMacSystemFont;
+
+}
+
+/*@@@@@@@@@@ LOGO @@@@@@@@@@*/
+
+.logo_container{
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+.logo{
+
+    max-width: 328px;
+    max-height: 450px;
+}
+
+/*@@@@@@@@@@ BUTTONS @@@@@@@@@@*/
+
+.btn{
+
+    margin: 10px;
+    margin-top: 20px !important;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+    margin-bottom: 50px !important;
+}
+
+.green_button, .red_button{
+
+    color: white;
+    background-color: #020037;
+    border-color: #020037;
+    border-radius: 17px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.green_button:hover {
+
+    background-color: #4CAF50;
+    border-color: #fff;
+    color: white;
+}
+
+.red_button:hover {
+
+    background-color: #c40000;
+    border-color: #fff;
+    color: white;
+}
+
+/*@@@@@@@@@@ INPUT @@@@@@@@@@*/
+
+.std_input {
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #020037;
+    text-align: center;
+    color: #020037;
+    max-width: 200px;
+    border-radius: 25px;
+}
+
+input.std_ph_red_0::placeholder, input.std_ph_red_1::placeholder, input.std_ph_red_2::placeholder, input.std_ph_red_3::placeholder,input.std_ph_red_4::placeholder{
+
+    color: #c40000 !important;
+    opacity: 1;
+}
+
+input.std_ph_blue_0::placeholder,input.std_ph_blue_1::placeholder,input.std_ph_blue_2::placeholder,input.std_ph_blue_3::placeholder,input.std_ph_blue_4::placeholder{
+
+    color: #020037 !important;
+    opacity: 1;
+}
+
+.has-error .form-control{
+
+  border-color: #c40000 !important;
+}
+
+.help-block{
+
+  color: #c40000 !important;
+}
+
+
+/*@@@@@@@@@@ NAVBAR @@@@@@@@@@*/
+
+.navbar{
+
+  margin-bottom: 50px;
+}
+
+.mynav{
+
+  font-family: "Quicksand", verdana, sans-serif;
+  background-color: #020037;
+  font-size: 18px;
+}
+
+.navbar-brand{
+
+  font-family: "Great Vibes", "Quicksand", verdana, sans-serif;
+  font-size: 30px !important;
+  color: white !important;
+  border-right: 3px solid white !important;
+  padding-bottom: 0px !important;
+  padding-left: 25px;
+
+}
+
+.navbar {
+
+    border-radius: 0px !important;
+    text-align: center;
+    min-height: 40px !important;
+    border: none !important;
+}
+
+.navbar-header {
+
+    float: none !important;
+    font-size: 100%;
+}
+
+.navbar-toggle {
+
+    margin-right: 0px !important;
+}
+
+.button-collapse-container {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.log-li-nav {
+
+    padding-right: 30px !important;
+    text-align: right;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.normal-li-nav {
+
+    padding-bottom: 0px !important;
+    border: none !important;
+    margin-top: none !important;
+    margin-bottom: none !important;
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+@media (max-width: 768px) {
+
+    .sky-brand{
+
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .navbar-nav>li>a{
+
+        padding-bottom: 0px !important;
+    }
+}
+
+/*@@@@@@@@@@ MODAL @@@@@@@@@@*/
+
+.modal-open{
+
+  overflow: unset !important;
+}

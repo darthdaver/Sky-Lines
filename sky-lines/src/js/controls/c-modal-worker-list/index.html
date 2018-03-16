@@ -1,0 +1,126 @@
+<!-- ko if: items -->
+<center>
+<table class="main_table" data-bind="if: items">
+  <tbody>
+    <tr>
+      <td class="details_title" colspan="3">Worker<td>
+    </tr>
+    <tr>
+      <td class="workers_table_container" rowspan="5">
+        <center>
+        <table class="workers-table-list table table-hover table-condensed table-striped">
+          <!-- ko if: items -->
+          <tbody class="workers_list" data-bind="foreach: items">
+            <tr class="cursor_row" data-bind="click: $parent.select, attr: {'id': $data['id'].split('/')[5] }">
+              <td data-bind="text: $data['fullname']" style="white-space: pre-wrap;"></td>
+            </tr>
+          </tbody>
+          <!-- /ko -->
+        </table>
+      </center>
+      </td>
+      <td class="td_label">Name:</td>
+      <td class="td_value" data-bind="text: worker()['fullname']"></td>
+    </tr>
+    <tr>
+      <td class="td_label">Selector:</td>
+      <!-- ko if: worker()['selector'] -->
+      <td class="td_value" data-bind="if: worker()['selector']"><span class="glyphicon glyphicon-one-fine-green-dot"></span></span></td>
+      <!-- /ko -->
+      <!-- ko ifnot: worker()['selector'] -->
+      <td class="td_value" data-bind="ifnot: worker()['selector']"><span class="glyphicon glyphicon-one-fine-red-dot"></span></span></td>
+      <!-- /ko -->
+    </tr>
+    <tr>
+      <td class="td_label">Annotator:</td>
+      <!-- ko if: worker()['annotator'] -->
+      <td class="td_value" data-bind="if: worker()['annotator']"><span class="glyphicon glyphicon-one-fine-green-dot"></span></span></td>
+      <!-- /ko -->
+      <!-- ko ifnot: worker()['annotator'] -->
+      <td class="td_value" data-bind="ifnot: worker()['annotator']"><span class="glyphicon glyphicon-one-fine-red-dot"></span></span></td>
+      <!-- /ko -->
+    </tr>
+    <!-- ko if: status_campaign()['status'] == 'ready' -->
+    <tr>
+      <td class="sel_label">Selection</td>
+      <td class="ann_label">Annotation</td>
+    </tr>
+    <tr>
+      <td class="td_enable_btn">
+        <!-- ko ifnot: worker()['selector'] -->
+        <a id="enable_selector_btn" class=" selection_button_green btn" data-bind="click: send.bind($data,'enable-worker-for-selection'), clickBubble: false">Enable</a>
+        <!-- /ko -->
+        <!-- ko if: worker()['selector'] -->
+        <a id="disable_selector_btn" class=" selection_button_red btn" data-bind="click: send.bind($data,'disable-worker-for-selection'), clickBubble: false">Disable</a>
+        <!-- /ko -->
+      </td>
+      <td class="td_enable_btn">
+        <!-- ko ifnot: worker()['annotator'] -->
+        <a id="enable_annotator_btn" class="annotation_button_green btn" data-bind="click: send.bind($data,'enable-worker-for-annotation'), clickBubble: false">Enable</a>
+        <!-- /ko -->
+        <!-- ko if: worker()['annotator'] -->
+        <a id="disable_annotator_btn" class="annotation_button_red btn" data-bind="click: send.bind($data,'disable-worker-for-annotation'), clickBubble: false">Disable</a>
+        <!-- /ko -->
+      </td>
+    </tr>
+    <!-- /ko -->
+  </tbody>
+</table>
+</center>
+<!-- /ko -->
+
+<center>
+<table class="main_table_selector">
+  <!-- ko if: items -->
+  <tbody>
+    <tr>
+      <td class="details_title sel_title">Workers for Selection</td>
+    </tr>
+    <tr>
+      <td class="workers_table_container_selectors" rowspan="5">
+        <center>
+          <table class="table table-hover table-condensed table-striped table_selectors">
+            <!-- ko if: items() -->
+            <tbody class="selector_list" data-bind="foreach: items">
+              <!-- ko if:  $data['selector']-->
+              <tr class="cursor_row" data-bind="click: $parent.select, attr: {'id': $index()}">
+                <td class="td_table_selectors" data-bind="text: $data['fullname']" style="white-space: pre-wrap;"></td>
+              </tr>
+              <!-- /ko -->
+            </tbody>
+            <!-- /ko -->
+          </table>
+        </center>
+      </td>
+    </tr>
+  </tbody>
+  <!-- /ko -->
+</table>
+
+<table class="main_table_annotator">
+  <!-- ko if: items -->
+  <tbody>
+    <tr>
+      <td class="details_title ann_title">Workers for Annotation</td>
+    </tr>
+    <tr>
+      <td class="workers_table_container_annotator" rowspan="5">
+        <center>
+          <table class="table table-hover table-condensed table-striped table_selectors">
+            <!-- ko if: items() -->
+            <tbody class="annotator_list" data-bind="foreach: items">
+              <!-- ko if:  $data['annotator']-->
+              <tr class="cursor_row" data-bind="click: $parent.select, attr: {'id': $index()}">
+                <td class="td_table_annotators" data-bind="text: $data['fullname']" style="white-space: pre-wrap;"></td>
+              </tr>
+              <!-- /ko -->
+            </tbody>
+            <!-- /ko -->
+          </table>
+        </center>
+      </td>
+    </tr>
+  </tbody>
+  <!-- /ko -->
+</table>
+</center>

@@ -1,0 +1,60 @@
+<!-- ko if: items -->
+<center>
+<table class="main_table" data-bind="if: items">
+  <tbody>
+    <tr>
+      <td class="details_title" colspan="3">Image</td>
+    </tr>
+    <tr>
+      <td class="images_table_container" rowspan="5">
+        <center>
+          <table class="images-table-list table table-hover table-condensed table-striped">
+          <!-- ko if: items -->
+            <tbody class="images_list" data-bind="foreach: items">
+              <tr class="cursor_row" data-bind="click: $parent.select, attr: {'id': $data['id'].split('/')[5] }">
+                <td class="img_label" data-bind="text: $data['name']" style="white-space: pre-wrap;"></td>
+              </tr>
+            </tbody>
+          <!-- /ko -->
+          </table>
+        </center>
+      </td>
+      <td class="td_image">
+        <center>
+          <!-- ko if: image()['jpg'] -->
+          <img class="image_selected" data-bind="attr: { src: 'http://awt.ifmledit.org' + image()['jpg'] }"></img>
+          <!-- /ko -->
+        </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ko if: status_campaign()['status'] == 'ready' -->
+<form id="form_btn">
+    <span class="fileUpload btn upload_container">
+        <label for="upload_file" class="btn upload_label"><span class="glyphicon glyphicon-upload"></span> Upload Image</label>
+        <input type="file" style="visibility:hidden;" value="Upload file" id="upload_file" name="files[]" multiple accept="image/jpeg" data-bind=" event: { change: function() { load_files('load-image') } }" />
+    </span>
+</form>
+<!-- /ko -->
+
+<div class="list-group" id="files"></div>
+</center>
+
+<script id="fileUploadProgressTemplate" type="text/x-jquery-tmpl">
+    <div class="list-group-item">
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width: 0%;"></div>
+        </div>
+    </div>
+</script>
+
+<script id="fileUploadItemTemplate" type="text/x-jquery-tmpl">
+    <div class="list-group-item">
+        <button type="button" class="close">&times;</button>
+        <span class="glyphicon glyphicon-file"></span> File name (type, date, etc)
+    </div>
+</script>
+
+<!-- /ko -->

@@ -1,0 +1,76 @@
+/*@@@@@@@@@@ INPUT @@@@@@@@@@*/
+
+.sign_up_input {
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #020037;
+    text-align: center;
+    color: #020037;
+    max-width: 200px;
+    border-radius: 25px;
+}
+
+input.sign_up_ph_red_0::placeholder, input.sign_up_ph_red_1::placeholder,input.sign_up_ph_red_2::placeholder{
+
+    color: #c40000 !important;
+    opacity: 1;
+}
+
+input.sign_up_ph_blue_0::placeholder,input.sign_up_ph_blue_1::placeholder,input.sign_up_ph_blue_2::placeholder{
+
+    color: #020037 !important;
+    opacity: 1;
+}
+
+/*@@@@@@@@@@ BUTTONS @@@@@@@@@@*/
+
+.registration_button
+{
+    color: #fff;
+    background-color: #020037;
+    border-color: #020037;
+    border-radius: 17px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.registration_button:hover {
+
+    background-color: #4CAF50;
+    border-color: #fff;
+    color: white;
+}
+
+.ret_to_log_in_button
+{
+    color: #fff;
+    background-color: #020037;
+    border-color: #020037;
+    border-radius: 17px;
+    width: 130px;
+    margin-top: 10px !important;
+}
+
+.ret_to_log_in_button:hover {
+
+    background-color: #c40000;
+    border-color: #fff;
+    color: white;
+}
+
+.paraghraph{
+
+    margin-top: 20px;
+}
+
+/*@@@@@@@@@@ CHECKBOX @@@@@@@@@@*/
+
+.type{
+
+    display: grid;
+}
+
+.type_master{
+
+    margin-left: 0 !important;
+}

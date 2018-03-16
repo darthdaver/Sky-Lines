@@ -1,0 +1,79 @@
+<!-- ko if: item -->
+<table class="details_campaign" data-bind="if: item">
+  <tr class="row_detail">
+    <td class="details_title">Details:</td>
+    <td class="false_head"></td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Name:</td>
+    <td class="td_value" data-bind="text: item()['name']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Selection Replica:</td>
+    <td class="td_value" data-bind="text: item()['selection_replica']"></td>
+    <td id="edit_waiting_btn" class="td_button edit_td_btn_ready"><a class="btn green_button table_std_button edit_btn" data-bind="click: trigger.bind($data, 'edit-campaign')" data-toggle="modal" data-target="#edit_modal" data-backdrop="static">Edit</a></td>
+  </tr>
+  <tr>
+    <td class="td_label">Threshold:</td>
+    <td class="td_value" data-bind="text: item()['threshold']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Replica:</td>
+    <td class="td_value" data-bind="text: item()['annotation_replica']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Size:</td>
+    <td class="td_value" data-bind="text: item()['annotation_size']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_button workers_td_btn"><a id="workers_waiting_btn" class="btn green_button table_std_button " data-bind="click: trigger.bind($data, 'workers-details-waiting-campaign')" onclick="disable_button('workers')" data-toggle="modal" data-target="#workers_modal" data-backdrop="static">Workers</a></td>
+    <td class="td_button images_td_btn"><a id="imagess_waiting_btn"class="btn green_button table_std_button"  data-bind="click: trigger.bind($data, 'images-details-waiting-campaign')" onclick="disable_button('images')" data-toggle="modal" data-target="#images_load_modal" data-backdrop="static">Images</a></td>
+    <td class="td_button start_td_btn"><a id="start_waiting_btn" class="btn terminate_button" data-bind="click: trigger.bind($data, 'master-start-campaign')">Start</a></td>
+  </tr>
+</table>
+<!-- /ko -->
+
+<!-- ko ifnot: item -->
+<table class="details_campaign" data-bind="ifnot: item">
+  <tr>
+    <td class="details_title">Details</td>
+    <td class="false_head"></td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Name:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Selection Replica:</td>
+    <td class="td_value"></td>
+    <td class="td_button edit_td_btn_ready"><a disabled class="btn green_button table_std_button edit_btn">Edit</a></td>
+  </tr>
+  <tr>
+    <td class="td_label">Threshold:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Replica:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Size:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_button workers_td_btn"><a disabled class="btn green_button table_std_button ">Workers</a></td>
+    <td class="td_button images_td_btn"><a disabled class="btn green_button table_std_button">Images</a></td>
+    <td class="td_button start_td_btn"><a disabled class="btn start_button">Start</a></td>
+  </tr>
+</table>
+<!-- /ko -->

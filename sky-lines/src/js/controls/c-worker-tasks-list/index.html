@@ -1,0 +1,29 @@
+<div class="annotation_table">
+<p class="details_title_ann">Annotation Tasks</p>
+<div class = "table-responsive list-table-ann">
+  <table class="workers-table-list table table-hover table-condensed table-striped">
+      <!-- ko if: items_ann -->
+      <tbody class="task_list" data-bind="foreach: items_ann">
+        <tr class="cursor_row" onclick="selected_sel_ann(this)" data-bind="click: $parent.select, attr: {'id': 'task' + '_' + $index() + '_annotation'}">
+          <td data-bind="text: 'task_' + $index()" style="white-space: pre-wrap;"></td>
+        </tr>
+      </tbody>
+      <!-- /ko -->
+    </table>
+</div>
+</div>
+
+<div class="selection_table">
+<p class="details_title">Selection Tasks</p>
+<div class = "table-responsive list-table-sel">
+  <table class="workers-table-list table table-hover table-condensed table-striped">
+      <!-- ko if: items_sel -->
+      <tbody class="task_list" data-bind="foreach: items_sel">
+        <tr class="cursor_row" onclick="selected_sel_ann(this)" data-bind="click: $parent.select, attr: {'id': 'task' + '_' + $index() + '_selection'}">
+          <td data-bind="text: 'task_' + $index()" style="white-space: pre-wrap;"></td>
+        </tr>
+      </tbody>
+      <!-- /ko -->
+  </table>
+</div>
+</div>

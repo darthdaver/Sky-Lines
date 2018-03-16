@@ -1,0 +1,79 @@
+<!-- ko if: item -->
+<table class="details_campaign" data-bind="if: item">
+  <tr class="row_detail">
+    <td class="details_title">Details:</td>
+    <td class="false_head"></td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Name:</td>
+    <td class="td_value" data-bind="text: item()['name']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Selection Replica:</td>
+    <td class="td_value" data-bind="text: item()['selection_replica']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Threshold:</td>
+    <td class="td_value" data-bind="text: item()['threshold']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Replica:</td>
+    <td class="td_value" data-bind="text: item()['annotation_replica']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Size:</td>
+    <td class="td_value" data-bind="text: item()['annotation_size']"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td id="workers_running_btn" class="td_button workers_td_btn"><a class="btn green_button table_std_button " data-bind="click: trigger.bind($data, 'workers-details-running-campaign')" onclick="disable_button('workers')" data-toggle="modal" data-target="#workers_modal" data-backdrop="static">Workers</a></td>
+    <td id="images_running_btn" class="td_button images_td_btn"><a class="btn green_button table_std_button"  data-bind="click: trigger.bind($data, 'images-details-running-campaign')" onclick="disable_button('images')" data-toggle="modal" data-target="#images_load_modal" data-backdrop="static">Images</a></td>
+    <td id="terminate_running_btn" class="td_button terminate_td_btn"><a class="btn terminate_button" data-bind="click: trigger.bind($data, 'master-terminate-campaign')">Terminate</a></td>
+  </tr>
+</table>
+<!-- /ko -->
+
+<!-- ko ifnot: item -->
+<table class="details_campaign" data-bind="ifnot: item">
+  <tr>
+    <td class="details_title">Details</td>
+    <td class="false_head"></td>
+    <td class="false_head"></td>
+  </tr>
+  <tr>
+    <td class="td_label">Name:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Selection Replica:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Threshold:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Replica:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_label">Annotation Size:</td>
+    <td class="td_value"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="td_button workers_td_btn"><a disabled class="btn green_button table_std_button ">Workers</a></td>
+    <td class="td_button images_td_btn"><a disabled class="btn green_button table_std_button">Images</a></td>
+    <td class="td_button terminate_td_btn"><a disabled class="btn terminate_button">Terminate</a></td>
+  </tr>
+</table>
+<!-- /ko -->
